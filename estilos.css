@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.portadatitulo{
+    background-color: #AC0A22;
+    color: white;
+    padding: 10px;
+}
+.portada-articulo{
+    color: white;
+    padding: 10px;
+}
+
+.requisitos h3{
+    color: white;
+    padding: 20px;
+}
+
+footer{
+    background-color: #59240D;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+footer a{
+    color: white;
+}
