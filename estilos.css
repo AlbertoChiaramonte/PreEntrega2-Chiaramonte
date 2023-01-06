@@ -20,7 +20,8 @@
     font-size: 1.1em;
 }
 .portada-parrafo{
-    background-color: rgb(38, 38, 70);
+    background-color: rgb(25, 25, 61);
+    border: 2px solid rgb(10, 10, 26);
 }
 
 .requisitos h3{
@@ -34,5 +35,208 @@ footer{
     font-size: 1.2em;
 }
 footer a{
+    font-size: 1.5em;
     color: white;
+}
+
+/* ------------------------------------------------------------------------ */
+/* ----------Empieza LORE ------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.bg-lore{
+    background-color: rgb(36, 36, 63);
+    color: white;
+}
+.lore-1{
+    background-color: rgb(216, 197, 28);
+    color: black;
+    border-radius: 2%;
+    padding: 10px;
+}
+.lore-2{
+    background-color: silver;
+    color: black;
+    border-radius: 2%;
+    padding: 10px;
+}
+.lore-3{
+    background-color: rgb(34, 34, 100);
+    color: rgb(255, 255, 255);
+    border-radius: 2%;
+    padding: 10px;
+}
+.lore-4{
+    background-color: rgb(230, 152, 35);
+    color: rgb(0, 0, 0);
+    border-radius: 2%;
+    padding: 10px;
+}
+.lore-5{
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+    border-radius: 2%;
+    padding: 10px;
+}
+.lore-6{
+    background-color: rgb(218, 217, 217);
+    color: rgb(0, 0, 0);
+    border-radius: 2%;
+    padding: 10px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* ----------Empieza PERSONAJES ------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.fondo-personajes{
+    background-color: rgb(49, 45, 54);
+    color: white;
+}
+.personajes{
+    background-color: #121163;
+    color: white;
+    padding: 10px;
+    height: 90vh;
+    background-image: url(/img/dirtmaouth.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.titulo-personajes{
+    background-color: #05043a;
+    font-size: 45px;
+}
+.titulo-listas{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    padding: 20px;
+}
+.animate__animated{
+    animation-iteration-count: 5;
+    animation-duration: 1.5s;
+    animation-play-state: paused;
+}
+.animate__animated:hover{
+    animation-play-state: running;
+}
+.listaPersonajes1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: flex-start;
+}
+.personajes1 img{
+    align-self: center;
+}
+.personajes1{
+    width: 300px;
+    margin: 20px 70px 40px;
+    font-size: 25px;
+}
+.listaPersonajes1 h3{
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* ----------Empieza GALERIA ------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+
+.carrusel{
+    width: 100%;
+}
+.img-fluid{
+    object-fit: contain;
+    height: 500px;
+    width: 100%;
+}
+
+@media only screen and (min-width:1140px){
+    .img-fluid{
+        height: 800px;
+    }
+}
+
+.galeriaCont{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 250px);
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 2%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.item1{
+    background-image: url(img/1576341361_005563_1576341527_noticia_normal.jpg);
+}
+.item2{
+    background-image: url(img/City_of_Tears_Fountain_Square.jpeg.webp);
+}
+.item3{
+    background-image: url(img/d640f52c-eb50-480b-98d8-bd79b1e5be5f.jpg);
+}
+.item4{
+    background-image: url(img/dirtmaouth.jfif);
+}
+.item5{
+    background-image: url(img/Greenpath_2.webp);
+}
+.item6{
+    background-image: url(img/Hollow-Knight---Nintendo-Switch.jfif);
+}
+.item7{
+    background-image: url(img/hollow-knight-shackled.webp);
+}
+.item8{
+    background-image: url(img/hollow-knight-silksong-2731669.webp);
+}
+.item9{
+    background-image: url(img/hollow-knight-silksong-se-confirma-como-lanzamiento-de-xbox-games-pass-en-el-dia-uno.jpg);
+}
+.item10{
+    background-image: url(img/hollow-knight-TEST.jpg);
+}
+.item11{
+    background-image: url(img/imgsteam.jpg);
+}
+.item12{
+    background-image: url(img/radiancepic.jpg);
+}
+.item13{
+    background-image: url(img/Screenshot_HK_The_Pale_King_05.webp);
+}
+.item14{
+    background-image: url(img/ss_0a6eebaf5ade7dbd1dcffcc108d6b5dca68373f3.1920x1080.jpg);
+}
+.item15{
+    background-image: url(img/ss_4c9cc3320086b199da64a4283f45ff41fe873d5e.1920x1080.jpg);
+}
+.item16{
+    background-image: url(img/website_mini_0002_mini1.jpg);
+}
+
+@media screen and (min-width:960px){
+    .galeriaCont{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 250px);
+    }
 }
