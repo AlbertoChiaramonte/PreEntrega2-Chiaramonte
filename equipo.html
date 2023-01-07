@@ -12,7 +12,7 @@
 </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
             <a class="navbar-brand" href="#">
                 <img src="img/silksongLogoBlanco.png" alt="logo" height="100px">
             </a>
@@ -21,7 +21,7 @@
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav mr-auto text-center">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -44,8 +44,105 @@
             </div>
           </nav>
 
-    
-      <footer class="mt-3">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container d-flex flex-column align-items-center">
+            <h1 class="display-4">Conoce el equipo detras</h1>
+            <img src="img/Team_cherry_Logo_Red.png" alt="logo team cherry" height="200px" width="auto">
+            <p class="lead">Hollow Knight y Hollow Knight Silksong son desarrollados por Team Cherry. Un pequeño grupo independiente originario de Adelaide, Sur de Australia.</p>
+          </div>
+        </div>
+
+        <!-- --- cartas del equipo --- -->
+
+        <section class="container-lg">
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mt-3">
+              <div class="card border-danger" style="width: 18rem;">
+                <img src="img/ari gibson.png" class="card-img-top " alt="imagen1">
+                <div class="card-body">
+                  <h5 class="card-title">Ari Gibson</h5>
+                  <p class="card-text">Co-director de Team Cherry y responsable del diseño de juego. es quien crea el arte, ambiente y anima cientos de insectos para el juego.
+                  Ha participado en el estudio de animación Mechanical Apple y ha trabajado en varios projectos desde peliculas, juegos y videos musicales.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mt-3">
+              <div class="card border-danger" style="width: 18rem;">
+                <img src="img/will pellen.png" class="card-img-top " alt="imagen1">
+                <div class="card-body">
+                  <h5 class="card-title">William Pellen</h5>
+                  <p class="card-text">Co-director de team Cherry y diseña el juego junto Ari. el principal encargado de crear enemigos, jefes y el comportamiento de los personajes.
+                  William ha diseñado y creado juegos por años, construyendo mundos para ser explorados y conquistados por cientos de jugadores.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4  d-flex justify-content-center mt-3">
+              <div class="card border-danger" style="width: 18rem;">
+                <img src="img/kacl vine-byn.png" class="card-img-top " alt="imagen1">
+                <div class="card-body">
+                  <h5 class="card-title">David Kazi</h5>
+                  <p class="card-text">Fue el responsable de la dirección técnica de Hollow Knight. Su trabajo se dividía en lograr hacer correr el juego y arreglar bugs y errores creados por el equipo. Ya no forma parte de Team Cherry..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---- acordion de desarrollo  -->
+
+        <h2 class="mt-5 text-center desarrollo-titulo">Desarrollo</h2>
+
+        <div class="container-lg">
+          <div class="accordion mt-4" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left text-danger" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Hungry Knight antes de Hollow Knight
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body d-flex align-items-center bg-secondary text-light">
+                  <p class=" col-sm-5 col-md-6">El desarrollo empezó como un proyecto llamado Hungry Knight, y revelado en Kickstarter para recaudar fondos y poder realizar el juego de sus sueños, donde a medida qué las donaciones se sumaban iban agregando características y ampliando la producción del juego.</p>
+                  <img class="col-sm-7 col-md-6" src="img/hungry knight.jpg" alt="hungry-knight">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left text-danger collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Unity
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body d-flex align-items-center bg-secondary text-light">
+                  <p class="col-sm-7 col-md-6">Todo el juego fue desarrollado con Unity, el motor de videojuegos multiplataforma creado por Unity Technologies. Lo más interesante es que todo el arte, diseño de personajes y animaciones básicas fue creado a mano.</p>
+                  <img class="col-sm-7 col-md-6" src="img/Unity_Technologies_logo.svg.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left text-danger collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Fusion 2D y 3D
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body d-flex align-items-center bg-secondary text-light">
+                  <p class="col-sm-8 col-md-6">Usando herramientas de diseño 2D en un ambiente 3D fue como construyeron los distintos niveles y la interacción con enemigos y el entorno.</p>
+                  <img class="col-sm-4 col-md-6" src="img/02-6-unity_parallax.1-min-compressor.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <footer class="mt-3 bg-dark">
         <p>Todos los derechos reservados © Team Cherry</p>
         <a href="https://twitter.com/TeamCherryGames">
             <i class="fa-brands fa-twitter"></i>

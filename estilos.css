@@ -1,10 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.navbar{
+    font-size: 1.1em;
+}
 
+.bg-index{
+    background-color: rgba(30, 22, 43, 0.938);
+}
 .portada{
     background-color: #AC0A22;
     color: white;
@@ -13,6 +22,9 @@
     background-image: url(/img/hd-hornet-of-hollow-knight-0elhmbnadxnvvrks.jpg);
     background-size: cover;
     background-position: center;
+}
+.bg-portada{
+    background-color: #681e29;
 }
 .portada-articulo{
     color: white;
@@ -139,6 +151,87 @@ footer a{
     text-align: center;
     padding: 5px;
 }
+
+
+/* ------------------------------------------------------------------------ */
+/* ----------Empieza EQUIPO ------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.card img{
+    height: auto;
+    width: 200px;
+    padding: 10px;
+    align-self: center;
+}
+.desarrollo-titulo{
+    font-size: 50px;
+    background-color: rgb(110, 2, 2);
+    color: white;
+    padding: 15px;
+}
+.accordion{
+    font-size: 1.2em;
+}
+.card-text{
+    font-size: 1.2em;
+}
+.btn{
+    font-size: 0.7em;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* ----------Empieza TIENDA ------------------------------------------------- */
+/* ------------------------------------------------------------------------ */
+
+.body-tienda{
+    background-color: #802532;
+    color: rgb(255, 255, 255);
+}
+.body-tienda2{
+    background-color: #070641;
+    color: white;
+}
+
+.icon-tienda{
+    padding: 20px;
+    letter-spacing: 40px;
+    font-size: 60px;
+}
+.icon-tienda a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-playstation:hover{
+    transition: all 0.5s ease;
+    color: blue;
+    font-size: 70px;
+}
+.fa-steam:hover{
+    transition: all 0.5s ease;
+    color: #66c0f4;
+    font-size: 70px
+}
+.fa-xbox:hover{
+    transition: all 0.5s ease;
+    color: #2ca243;
+    font-size: 70px
+}
+
+.link-yt{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .link-yt{
+        height: 500px;
+        width: 100%;
+    }
+}
+
 
 
 /* ------------------------------------------------------------------------ */
