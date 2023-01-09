@@ -1,10 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: quicksand;
 }
 
 .navbar{
@@ -124,12 +127,12 @@ footer a{
     text-decoration: underline;
     padding: 20px;
 }
-.animate__animated{
+.animate__pulse{
     animation-iteration-count: 5;
     animation-duration: 1.5s;
     animation-play-state: paused;
 }
-.animate__animated:hover{
+.animate__pulse:hover{
     animation-play-state: running;
 }
 .listaPersonajes1{
@@ -146,6 +149,8 @@ footer a{
     width: 300px;
     margin: 20px 70px 40px;
     font-size: 25px;
+    display: flex;
+    flex-flow: column;
 }
 .listaPersonajes1 h3{
     text-align: center;
