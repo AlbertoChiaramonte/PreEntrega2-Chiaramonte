@@ -162,9 +162,9 @@ footer a:hover {
   align-content: center;
   justify-items: flex-start;
 }
-
-.personajes1 img {
-  align-self: center;
+.listaPersonajes1 h3 {
+  text-align: center;
+  padding: 5px;
 }
 
 .personajes1 {
@@ -174,10 +174,8 @@ footer a:hover {
   display: flex;
   flex-flow: column;
 }
-
-.listaPersonajes1 h3 {
-  text-align: center;
-  padding: 5px;
+.personajes1 img {
+  align-self: center;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -227,7 +225,6 @@ footer a:hover {
   letter-spacing: 40px;
   font-size: 60px;
 }
-
 .icon-tienda a {
   text-decoration: none;
   color: white;
@@ -257,12 +254,6 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .link-yt {
-    height: 500px;
-    width: 100%;
-  }
-}
 /* ------------------------------------------------------------------------ */
 /* ----------Empieza GALERIA ------------------------------------------------- */
 /* ------------------------------------------------------------------------ */
@@ -277,11 +268,6 @@ footer a:hover {
   width: 100%;
 }
 
-@media only screen and (min-width: 1140px) {
-  .img-fluid {
-    height: 800px;
-  }
-}
 .galeriaCont {
   width: 100%;
   height: auto;
@@ -370,6 +356,18 @@ footer a:hover {
   background-image: url(/img/website_mini_0002_mini1.jpg);
 }
 
+/* ----------------------- MEDIA QUERIES --------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .link-yt {
+    height: 500px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .img-fluid {
+    height: 800px;
+  }
+}
 @media screen and (min-width: 960px) {
   .galeriaCont {
     grid-template-columns: repeat(4, 1fr);
