@@ -190,9 +190,6 @@ footer{
 .accordion{
     font-size: 1.2em;
 }
-.card-text{
-    font-size: 1.2em;
-}
 .btn{
     font-size: 0.7em;
 }
@@ -267,8 +264,8 @@ footer{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 250px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 250px);
     grid-gap: 20px;
     padding: 10px;
 }
@@ -359,5 +356,20 @@ footer{
     .galeriaCont{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 250px);
+    }
+}
+
+@media screen and (min-width:520px) and (max-width:959px){
+    .galeriaCont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 250px);
+    }
+}
+
+@media screen and (max-width:540px){
+    .acordion{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 }
